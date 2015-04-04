@@ -116,10 +116,10 @@
     <input type="hidden" name="lang" value="it">
 
     <section class="split">
-        <header>Personal information</header>
+        <header>Informazioni personali</header>
         <div>
             <div>
-                <label for="surname">surname</label>
+                <label for="surname">cognome</label>
             </div><div>
                 <input id="surname" type="text" name="surname" placeholder="Smith" required>
             </div>
@@ -127,7 +127,7 @@
 
         <div>
             <div>
-                <label for="name">name</label>
+                <label for="name">nome</label>
             </div><div>
                 <input id="name" type="text" name="name" placeholder="John" required>
             </div>
@@ -144,7 +144,7 @@
 
         <div>
             <div>
-                <label for="birth_date">birth date</label>
+                <label for="birth_date">data di nascita</label>
             </div><div>
                 <input id="birth_date" type="text" name="birth_date" placeholder="yyyy-mm-dd" required>
             </div>
@@ -152,7 +152,7 @@
 
         <div>
             <div>
-                <label for="male">gender</label>
+                <label for="male">sesso</label>
             </div><div>
                 <input type="radio" name="gender" value="M" checked> M
                 <input type="radio" name="gender" value="F"> F
@@ -161,7 +161,7 @@
 
         <div>
             <div>
-                <label for="citizenship">citizenship</label>
+                <label for="citizenship">cittadinanza</label>
             </div><div>
                 <select id="citizenship" name="citizenship">
                     <option value="100000100" selected>Italy</option>
@@ -172,15 +172,15 @@
                     <option value="100000206">Belgium</option>
                     <option value="100000212">Denmark</option>
                     <option value="100000219">United Kingdom</option>
-                    <option value="" >Other</option>
+                    <option value="" >Altro</option>
                 </select>
             </div>
         </div>
     </section><section class="split">
-        <header>staying</header>
+        <header>soggiorno</header>
         <div>
             <div>
-                <label for="arrival">arrival</label>
+                <label for="arrival">arrivo</label>
             </div><div>
                 <input type="text" id="arrival" name="start" placeholder="yyyy-mm-dd" min="2015-05-01" max="2015-09-29" required>
             </div>
@@ -188,7 +188,7 @@
 
         <div>
             <div>
-                <label for="departure">departure</label>
+                <label for="departure">partenza</label>
             </div><div>
                 <input type="text" id="departure" name="end" placeholder="yyyy-mm-dd" min="2015-05-02" max="2015-09-30" required>
             </div>
@@ -197,7 +197,7 @@
 
         <div>
             <div>
-                <label for="adults">adults</label>
+                <label for="adults">adulti</label>
             </div><div>
                 <select type="text" id="adults" name="adults">
                     <option value="1" selected>1</option>
@@ -226,14 +226,14 @@
         </div>
         <div>
             <div>
-                <label for="equipement">equipement</label>
+                <label for="equipement">mezzo</label>
             </div><div>
-                <input type="text" id="equipment" name="equipment" placeholder="middle size caravan">
+                <input type="text" id="equipment" name="equipment" placeholder="roulotte nella media">
             </div>
         </div>
         <div>
             <div>
-                <label for="extra_tents">extra tents</label>
+                <label for="extra_tents">tendine extra</label>
             </div><div>
                 <select type="" id="extra_tents" name="extra_tents">
                     <option value="0" selected>0</option>
@@ -249,12 +249,12 @@
 
     <section class="center">
         <input type="checkbox" name="with_pet" id="with_pet">
-            I will take with me my pet &amp; thus I accept the following 
+            Porter&#242; con me il mio animale &amp; accetto quindi le seguenti 
             <a href="pet_disclaimer.html" target="_blank" data-mode="modal">condizioni</a>.
 
             <br>
 
-            <input type="text" id="pet" name="pet" placeholder="I will take a ..."><i></i>
+            <input type="text" id="pet" name="pet" placeholder="Porter&#242; un ..."><i></i>
     </section>
 
 
@@ -263,10 +263,10 @@
         <div>
             <header>ACSI &amp;<br> Camping Key Europe</header><label>C</label>
 
-            <span class="enchant">&euro; 16.00<sub>/day</sub></span>
+            <span class="enchant">&euro; 16.00<sub>/giorno</sub></span>
             <footer>
-                2 people + 1 piazzola C + 1 cane<br>
-                low season days only
+                2 persone + 1 piazzola C + 1 cane<br>
+                solo bassa stagione
             </footer>
             <div class="opt">
                 <div><input type="radio" name="opt" value="A_CKE_C" id="OPT_A"></div>
@@ -274,18 +274,18 @@
         </div><div>
             <header>ACSI &amp;<br> Camping Key Europe</header><label>B</label>
 
-            <span class="enchant">&euro; 18.00<sub>/day</sub></span>
+            <span class="enchant">&euro; 18.00<sub>/giorno</sub></span>
             <footer>
-                2 people + 1 piazzola B<br>
-                low season days only
+                2 persone + 1 piazzola B<br>
+                solo bassa stagione
             </footer>
             <div class="opt">
                 <div><input type="radio" name="opt" value="A_CKE_B" id="OPT_B"></div>
             </div>
         </div><div>
-            <header>Without promotions</header><label>#</label>
+            <header>senza convenzioni</header><label>#</label>
 
-            <footer>Chose your favourite place:</footer>
+            <footer>Scegli la tua piazzola preferita:</footer>
 
             <select name="area" class="hide" id="area">
                 <option value="A">Area A</option>
@@ -295,7 +295,7 @@
 
             <select name="resource" id="pitch">
                 <optgroup data-kind="A" label="Area A">
-                    <option value="1">qualsiasi piazzola</option>
+                    <option value="1">Qualsiasi</option>
                     <option value="4">2</option>
                     <option value="6">4</option>
                     <option value="7">5</option>
@@ -325,7 +325,7 @@
                 </optgroup>
 
                 <optgroup data-kind="B" label="Area B">
-                    <option value="2" selected>qualsiasi piazzola</option>
+                    <option value="2" selected>Qualsiasi</option>
                     <option value="5">3</option>
                     <option value="8">6</option>
                     <option value="9">7</option>
@@ -367,7 +367,7 @@
                 </optgroup>
 
                 <optgroup data-kind="C" label="Area C">
-                    <option value="3">qualsiasi piazzola</option>
+                    <option value="3">Qualsiasi</option>
                     <option value="70">66</option>
                     <option value="71">67</option>
                     <option value="72">68</option>
@@ -432,13 +432,13 @@
         <header>note</header>
         <textarea name="note" value="" placeholder="We would like to stay next to...
  We have got more than 5 children...
- We would like a shadowed place...
+ We would like a shaded place...
 ">
         </textarea>
     </section>
     <section class="center">
-        <input type="checkbox" name="CR" checked required> I accept the <a href="rules.html" target="_blank">camping regulations</a>.<br>
-        <input type="checkbox" name="TC" checked required> I accept the <a href="privacy.html" target="_blank">privacy policy</a>.<br>
+        <input type="checkbox" name="CR" checked required> Accetto <a href="rules.html" target="_blank">il regolamento</a>.<br>
+        <input type="checkbox" name="TC" checked required> Accetto <a href="privacy.html" target="_blank">privacy policy</a>.<br>
         <br>
         <button type="submit">prenota</button>
     </section>
@@ -479,7 +479,7 @@
         </section><section class="half right preserve">
             <br>
             &copy; <a href="mailto:martin.brugnara@gmail.com">Martin Brugnara</a> 2010-2015 | <a href="authors.html" target="_blank">Contributors</a> <br>
-            <p><small>Last update : <time datetime="2015-03-19T11:03:15.577398">2015-03-19T11:03:15.577398</time></small><p>
+            <p><small>Last update : <time datetime="2015-04-04T09:56:04.761986">2015-04-04T09:56:04.761986</time></small><p>
             <br>
         </section>
         <section class="expand center">
