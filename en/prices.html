@@ -1,310 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html">
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Prices</title>
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+    </head>
+    <body>
 
-    <!-- Google internalization -->
-    <link rel="alternate" hreflang="x-default" href="/en/prices.html">
-    <link rel="alternate" hreflang="en" href="/en/prices.html">
-    <link rel="alternate" hreflang="it" href="/it/prices.html">
-    <link rel="alternate" hreflang="de" href="/de/prices.html">
-    <link rel="alternate" hreflang="nl" href="/nl/prices.html">
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-left x-menu">
+                    <a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
+                    <a href="#" class="nav-item is-tab is-active">prices</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+
+            <div class="container content">
+    <h1>Prezzi 2017</h1>
+    <p>The <strong>price includes 2 persons</strong>, a camper/roulotte/tent,tents inside the place, 4A power supply, bathrooms, warm water in showers and a parking spot.</p><p>Extra people will be charged according to the price list.</p><p>Price is by night: when leaving after 11am an additional night will be charged</p><p>In low season it is possible for a single person to stayin a <a href="panorama.html">PANORAMA</a> or <a href="relax.html">RELAX</a> for &euro;12/night.</p>
+</div>
 
 
-    <!-- A little bit of egocentricism :p -->
-    <meta name="author" content="Martin Brugnara <martin.brugnara@gmail.com">
+            <div class="container">
+                <div class="content is-medium">
+                    <table class="table is-bordered is-capitalize">
+                        <thead>
+                            <tr>
+                                <th>pitch</th>
+                                <th style="text-align:center">28/04 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 07/07<br><small class="is-upper">low season</small></th>
+                                <th style="text-align:center">07/07 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 26/08<br><small class="is-upper">high season</small></th>
+                                <th style="text-align:center">26/08 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 30/09<br><small class="is-upper">low season</small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a href="aqva.html">AQVA</a></td>        <td class="has-text-centered">&euro;33.</td><td class="has-text-centered">&euro;45.</td><td class="has-text-centered">&euro;33.</td></tr>
+                            <tr><td><a href="panorama.html">PANORAMA</a></td><td class="has-text-centered">&euro;23.</td><td class="has-text-centered">&euro;42.</td><td class="has-text-centered">&euro;23.</td></tr>
+                            <tr><td><a href="relax.html">RELAX</a></td>      <td class="has-text-centered">&euro;23.</td><td class="has-text-centered">&euro;38.</td><td class="has-text-centered">&euro;23.</td></tr>
+                        </tbody>
+                    </table>
 
-    <!-- Google -->
-    <meta name="google-site-verification" content="h7NhDkvsryR3wPb1KDHoRfajA7moBLGymNKtzpgerJ8"/>
-    <meta name="description" content="Camping Punta Indiani snc - Lago Caldonazzo - Italy - Trentino - Camping">
+                    <div class="container content is-medium is-hidden-mobile">
+    <style type="text/css" scoped>
+        @media print {.is-hidden-print {display: none}}
+    </style>
 
-    <!-- IE compatibility shit -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <!-- Mobile support -->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <link rel="icon" href="/static/favicon.png">
-
-    <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.min.css">
-
-    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../static/js/CampingPuntaIndiani.min.js"></script>
-
-    <noscript>
-        <style type="text/css">
-            #header-slide-show {list-style:none; margin-top: 40px;}
-            #header-slide-show li {display: none;}
-            #header-slide-show li:first-child {display: block;}
-            form.booking [data-perm] {display: block;}
-        </style>
-    </noscript>
-    
-</head>
-<body>
-
-  <section name="lang">
-    <a href="../en/prices.html" target="_self"><i class="flag flag-en">en</i></a>
-    <a href="../nl/prices.html" target="_self"><i class="flag flag-nl">nl</i></a>
-    <a href="../de/prices.html" target="_self"><i class="flag flag-de">de</i></a>
-    <a href="../it/prices.html" target="_self"><i class="flag flag-it">it</i></a>
-  </section>
-
-    <header>
-      <img id="logo" src="../static/img/logo.png" alt="logo">
-      <p id="brand">Camping Punta Indiani</p>
-    </header>
-    <section id="menu">
-      <ul class="only-vert">
-        <li>Menu<i class="icon icon-open">&nbsp;</i><i class="icon icon-close">&nbsp;</i></li>
-      </uL>
-      <ul>
-        <li ><a href="home.html">home</a></li>
-        <li class="selected"><a href="prices.html">prices</a></li>
-        <li ><a href="map.html">map</a></li>
-        <li ><a href="route.html">route</a></li>
-        <li ><a href="around.html">around</a></li>
-        <li ><a href="gallery.html">gallery</a></li>
-        <li ><a href="services_and_offers.html">services & offers</a></li>
-      </ul>
-      <ul class="pull-right">
-        <li class="booking" >
-          <a href="booking.html">booking</a>
-          <!-- <a href="http://booking.campingpuntaindiani.it">booking</a> -->
-        </li>
-      </ul>
-    </section>
-
-    <ul class="bxslider" id="header-slide-show">
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader0.jpg" alt="Camping Punta Indiani"></li>
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader1.jpg" alt="Camping Punta Indiani"></li>
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader2.jpg" alt="Camping Punta Indiani"></li>
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader3.jpg" alt="Camping Punta Indiani"></li>
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader4.jpg" alt="Camping Punta Indiani"></li>
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader5.jpg" alt="Camping Punta Indiani"></li>
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader6.jpg" alt="Camping Punta Indiani"></li>
-      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader7.jpg" alt="Camping Punta Indiani"></li>
-    </ul>
-
-    <!-- Used only to display important messages (should) -->
-    <section id="banner">
-      <a href="gallery.html#videos" style="color: white; text-decoration: underline;">Watch the new video!</a>
-    </section>
-
-    <!--
-    <section id="news">
-      <div>
-        News
-      </div><div>
-        
-      </div>
-    </section>
-    -->
-
-<!-- BODY START -->
-    
-    
-You can make a reservation after the first of January.<br>
-Be aware that Punta Indiani is a familycamping, with lots of returning guests.<br>
-We recommend you to make your reservation in time.<br>
-For the months july and august we suggest a reservation.<br>
-    
-
-    <table class="prices-table">
-        <!--
-        <caption>
-        -->
+    <table class="table is-narrow is-bordered is-capitalize">
         <thead>
-            <th>2016</th>
-            <th>29/04 - 07/07</th>
-            <th>07/07 - 26/08</th>
-            <th>26/08 - 30/09</th>
+            <tr>
+                <th>
+                    person<br>
+                    <small class="is-upper">additional</small>
+                </th>
+                <th>
+                    child&nbsp;[2-12]<br>
+                    <small class="is-upper">additional</small>
+                </th>
+                <th>
+                    dog<br>
+                    <small class="is-upper">only pitch&nbsp;<a href="relax.html">RELAX</a></small>
+                </th>
+                <th>
+                    occupied but uninhabited pitch<br>
+                    <small class="is-upper">low season only</small>
+                </th>
+                <th>
+                    outside the pitch<br>
+                    <small class="is-upper">&#8545; auto, barca, tendina, carrello...</small>
+                </th>
+                <th>
+                    ospite<br>
+                    <small class="is-upper">authorized only</small>
+                </th>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="red">pitch A</td>
-                <td>10.00</td>
-                <td>18.00</td>
-                <td>10.00</td>
-            </tr>
-            <tr>
-                <td class="green">pitch B</td>
-                <td class="gratis"></td>
-                <td>15.00</td>
-                <td class="gratis"></td>
-            </tr>
-            <tr>
-                <td class="gray">pitch C</td>
-                <td class="gratis"></td>
-                <td>12.00</td>
-                <td class="gratis"></td>
-            </tr>
-            <tr>
-                <td>person</td>
-                <td>11.00</td>
-                <td>11.50</td>
-                <td>11.00</td>
-            </tr>
-            <tr>
-                <td>child [2-12]</td>
-                <td>6.50</td>
-                <td>7.00</td>
-                <td>6.50</td>
-            </tr>
-            <tr>
-                <td>Extra&sup1;</td>
-                <td>5.00</td>
-                <td>5.00</td>
-                <td>5.00</td>
-            </tr>
-            <tr>
-                <td>visitor&sup2;</td>
-                <td>9.00</td>
-                <td>9.00</td>
-                <td>9.00</td>
-            </tr>
-            <tr>
-                <td>dog&sup3;</td>
-                <td>4.00</td>
-                <td>5.00</td>
-                <td>4.00</td>
-            </tr>
-            <tr>
-                <td>local tax</td>
-                <td colspan="3">0.70 each person (age&ge;14) for the first 10 days of stay</td>
+                <td class="has-text-centered">&euro;10.</td>
+                <td class="has-text-centered">&euro;6.</td>
+                <td class="has-text-centered">&euro;4.</td>
+                <td class="has-text-centered">&euro;10.</td>
+                <td class="has-text-centered">&euro;5.</td>
+                <td class="has-text-centered">&euro;9.</td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="5">
-                    <p><sup>*</sup> <a class="h" href="rules.html" target="_self">camping regulations</a></p>
-                    <p>&sup1; 2nd car | small tent | boats, etc.. Outside the place.</p>
-                    <p>&sup2; each visit has to be pre-authorized by direction.</p>
-                    <p>&sup3; dog entrance must be pre-authorized by the Management and must comply the following <a class="h" href="pet_disclaimer.html" target="_blank" data-mode="modal">conditions</a></p>
-                </td>
-            </tr>
-        </tfoot>
     </table>
+</div>
 
-    <br>
-    <br>
+<div class="container content is-hidden-tablet is-hidden-print">
+    <table class="table is-narrow is-bordered">
+        <tr>
+            <td>
+                person<br>
+                <small>additional</small>
+            </td>
+            <td class="has-text-centered">&euro;10.</td>
+        </tr>
+        <tr>
+            <td>
+                child&nbsp;[2-12]<br>
+                <small>additional</small>
+            </td>
+            <td class="has-text-centered">&euro;6.</td>
+        </tr>
+        <tr>
+            <td>
+                dog<br>
+                <small>only pitch&nbsp;<a href="relax.html">RELAX</a></small>
+            </td>
+            <td class="has-text-centered">&euro;4.</td>
+        </tr>
+        <tr>
+            <td>
+                occupied but uninhabited pitch<br>
+                <small>low season only</small>
+            </td>
+            <td class="has-text-centered">&euro;10.</td>
+        </tr>
+        <tr>
+            <td>
+                outside the pitch<br>
+                <small>&#8545; auto, barca, tendina, carrello...</small>
+            </td>
+            <td class="has-text-centered">&euro;5.</td>
+        </tr>
+        <tr>
+            <td>
+                ospite<br>
+                <small>authorized only</small>
+            </td>
+            <td class="has-text-centered">&euro;9.</td>
+        </tr>
+    </table>
+</div>
 
-    <figure class="prices-pitch">
-        <h4>pitch A</h4>
-        <img src="../static/img/prices/placeA.jpg" alt="Place A">
-        <figcaption>
-        
-Pitches direct on the water.
-From 50mq to 70mq.
-External parking lot included.
-Dogs not allowed.
-        
-        </figcaption>
-    </figure><figure class="prices-pitch">
-        <h4>pitch B</h4>
-            <div><img src="../static/img/prices/placeB.jpg" alt="Place B"></div>
-        <figcaption>
-        
-Pitches near the water but not directly on.
-From 60mq to 80mq.
-The smaller  have got external parking lot included.
-Dogs generally not allowed.
-        
-        </figcaption>
-    </figure><figure class="prices-pitch">
-        <h4>pitch C</h4>
-        <div><img src="../static/img/prices/placeC.jpg" alt="Place C"></div>
-        <figcaption>
-        
-Wooded and grassy pitches.
-From 70mq to 100mq.
-Dogs always allowed, after pre-authorization from the Management.
-        
-        </figcaption>
-    </figure>
 
-<!-- BODY END -->
-
-    <footer>
-        <section class="ref expand center">
-            <img src="../static/img/footer/trentino.png" alt="Trentino">
-            <img src="../static/img/footer/valsugana.png" alt="Valsugana">
-
-            <img src="../static/img/footer/adac.png" alt="ADAC">
-            <img src="../static/img/footer/anwb.png" alt="ANWB">
-            <img src="../static/img/footer/acsi.png" alt="ACSI">
-            <img src="../static/img/footer/campingit.png" alt="Camping.it">
-
-            <img src="../static/img/footer/dcc.png" alt="DCC"/>
-            <img src="../static/img/footer/ecc.png" alt="ECC">
-
-            <img src="../static/img/footer/alan_rogers.png" alt="Alan Rogers">
-
-            <img src="../static/img/footer/wifi.png" alt="WIFI">
-            <img src="../static/img/footer/zoover.png" alt="Zoover winner 2014">
+                </div>
+            </div>
         </section>
-        <section class="half preserve">
-            <address>
-                <strong>Camping Punta Indiani</strong><br>
-                38057 Valcanover Pergine<br>
-                (TN) ITALY<br>
-                <abbr title="Phone">Phone: 0461 548062</abbr><br>
-                <a class="h" href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
-            </address>
-        </section><section class="half right preserve">
-            <br>
-            &copy; <a href="mailto:martin.brugnara@gmail.com">Martin Brugnara</a> 2010-2015 | <a href="authors.html" target="_blank">Contributors</a> <br>
-            <p><small>Last update : <time datetime="2016-08-10T11:02:26.577487">2016-08-10T11:02:26.577487</time></small><p>
-            <br>
-        </section>
-        <section class="expand center">
-        Camping Punta Indiani Snc  di Piffer Renzo e C. - P.IVA 01834810226 <br>
-        </section>
-    </footer>
 
-    <div id="modal">
-        <section>
-            <a href="#" data-action="close">&otimes;</a>
-            <section name="modal-content"><!-- load here via AJAX --></section>
-        </section>
+        <footer class="footer no-ajax">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Camping Punta Indiani</strong> di <a href="mailto:info@campingpuntaindiani.it">Piffer Renzo e C.</a> - P.IVA 01834810226<br>
+                38057 Valcanover Pergine (TN) ITALY</span><br>
+                <abbr title="Phone">Phone: (0039) 0461 548062</abbr> (summer only)<br>
+                <abbr title="Cell.">Cell.: (0039) 345 0794205</abbr> (winter only)<br>
+                <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
+            </p>
+        </div>
     </div>
+</footer>
+        <!-- G-Adwords & remarketing -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+var google_conversion_id = 867846366;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/867846366/?guid=ON&amp;script=0"/>
+    </div>
+</noscript>
 
-    <script type="text/javascript">
-      /* Call here before HTML component is rendered */
-      (function(){if (!sessionStorage || !sessionStorage.getItem('cookie-bar')) document.write('<div id="cookie-bar"><p>Il Sito di Camping Punta Indiani utilizza cookies di sessione ed analytics.Per saperne di pi&ugrave; consulta la nostra <a href="cookie.html">Privacy Policy</a>.<br>Se prosegui nella navigazione di questo sito, acconsenti all&#8217;utilizzo dei cookies.</p><button onclick="hideCookieBanner()">Continua</button></div>');})();
-    </script>
-    <noscript>
-        <p>Il Sito di Camping Punta Indiani utilizza cookies di sessione ed analytics.
-        Per saperne di pi&ugrave; consulta la nostra <a href="cookie.html">Privacy Policy</a>.<br>
-        Se prosegui nella navigazione di questo sito, acconsenti all&#8217;utilizzo dei cookies.</p>
-    </noscript>
-
-    <!-- ShinyStat -->
-    <script type="text/javascript" language="JavaScript" src="http://codiceisp.shinystat.com/cgi-bin/getcod.cgi?USER=puntaindiani&P=4"></script>
-    <noscript>
-        <img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=puntaindiani&P=4" alt="" style="border:0; height:0; width:0;">
-    </noscript>
-
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-      var ref = '';
-      if (sessionStorage) {
+<!-- G-Analitycs -->
+<script>
+    var ref = '';
+    if (sessionStorage) {
         ref = sessionStorage.getItem('HomeRef');
         sessionStorage.removeItem('HomeRef');
-      }
+    }
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34314298-1']);
-      if (ref) _gaq.push(['set', 'referrer', ref]); // Hacking referrer
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-</body>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34314298-1', 'auto');
+    if (ref) ga('set', 'referrer', ref);
+    ga('send', 'pageview');
+</script>
+
+    </body>
+    <!--
+    // vim: spelllang=it
+    -->
 </html>
