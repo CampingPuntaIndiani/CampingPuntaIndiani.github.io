@@ -27,6 +27,8 @@
                 background-size: cover;
             }
 
+            .hero.main-hero .hero-head {background-color: rgba(0,0,0,0.3)}
+
             /* Features broken on phones (on touch)
             TODO: consider detecting via JS instead
              */
@@ -39,7 +41,7 @@
         </style>
     </head>
     <body class="nojs it">
-        <section class="hero is-info is-fullheight main-hero" id="home">
+        <section class="hero is-info is-fullheight main-hero" id="home" data-gaid="home">
             <div class="hero-head">
                 <header class="nav">
                     <div class="container">
@@ -60,8 +62,7 @@
                             <a href="gallery.html" class="nav-item">gallery</a>
                             <a href="offerte.html" class="nav-item">offerte</a>
                             <span class="nav-item">
-                                <a href="#prenota" class="button is-primary is-inverted">
-                                    <span class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                                <a href="#prenota" class="button is-primary is-upper">
                                     <span>prenota</span>
                                 </a>
                             </span>
@@ -93,8 +94,7 @@
                 </ul>
                 <ul class="is-center x-menu">
                     <li><a href="https://www.facebook.com/CampingPuntaIndiani/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a></li>
-                    <li><a class="tooltip-bottom" data-tooltip="0461-548062 & 345 0794205"><span class="icon"><i class="fa fa-phone" aria-hidden="true" aria-label="contact via phone" title="">&nbsp;</i></span></a></li>
-                    <li><a><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true" aria-label="contact via mail" title="info@campingpuntaindiani.it">&nbsp;</i></span></a></li>
+                    <li><a href="#contatti"><span class="icon" title="contatti"><i class="fa fa-address-card-o" aria-hidden="true"></i></span></a></li>
                     <li>
                         <span class="x-matrix">
                             <span class="x-row">
@@ -164,7 +164,7 @@
             </div>
         </nav>
 
-        <section class="section" id="il-campeggio">
+        <section class="section" id="il-campeggio"  data-gaid="il-campeggio">
             <div class="container">
                 <div class="content is-medium has-text-centered">
                     <h1 class="title is-1 is-upper">campeggiare &#232; una passione.</h1>
@@ -255,7 +255,7 @@
 
         <!--            TODO: inserire anche qui versione nera di ADAC ANWB ACSI e? -->
 
-        <section class="section" id="piazzole">
+        <section class="section" id="piazzole" data-gaid="piazzole">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">le nostre piazzole</h1>
@@ -326,7 +326,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="aqva.html" class="link is-medium is-secondary">scopri maggiori dettagli</a>
+                                        <a href="aqva.html" class="link is-medium is-secondary is-upper">scopri maggiori dettagli</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=aqva#prenota" class="button is-medium is-primary">prenota AQVA</a>
@@ -378,7 +378,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="panorama.html" class="link is-medium is-secondary">scopri maggiori dettagli</a>
+                                        <a href="panorama.html" class="link is-medium is-secondary is-upper">scopri maggiori dettagli</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=panorama#prenota" class="button is-medium is-primary">prenota PANORAMA</a>
@@ -435,7 +435,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="relax.html" class="link is-medium is-secondary">scopri maggiori dettagli</a>
+                                        <a href="relax.html" class="link is-medium is-secondary is-upper">scopri maggiori dettagli</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=relax#prenota" class="button is-medium is-primary">prenota RELAX</a>
@@ -449,11 +449,11 @@
             </div>
         </section>
 
-        <section class="section is-paddingless" id="dove-siamo">
+        <section class="section is-paddingless" id="dove-siamo" data-gaid="dove-siamo">
             <iframe class="gmap" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD4nigm8rShwERBQ80TUTactTvvJQo-SZw&q=Camping+Punta+Indiani,Pergine+Italy" allowfullscreen></iframe>
         </section>
 
-        <section class="section" id="outdoor">
+        <section class="section" id="outdoor" data-gaid="outdoor">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">Un mondo da scoprire</h1>
@@ -566,7 +566,7 @@
             </div>
         </section>
 
-        <section class="section" id="highlights">
+        <section class="section" id="highlights" data-gaid="highlights">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">La vita in campeggio</h1>
@@ -637,7 +637,7 @@
         </section>
 
 
-        <section class="section" id="prenota">
+        <section class="section" id="prenota" data-gaid="prenota">
             <div class="container content">
                 <div class="heading">
                     <h1 class="title">prenota ora la tua piazzola preferita</h1>
@@ -763,7 +763,7 @@
                                     <div class="column">
                                         <label class="label" for="adults">adulti</label>
                                         <div class="control">
-                                            <span class="select"><select type="text" id="adults" name="adults"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
+                                            <span class="select"><select type="text" id="adults" name="adults" required><option></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
                                         </div>
                                         <span class="help">totale adulti.</span>
                                     </div>
@@ -846,8 +846,23 @@
                                 <legend>Che mezzo utilizzerai?</legend>
                                 <div class="control has-addons">
                                     <a class="button"><i class="fa fa-car" aria-hidden="true"></i></a>
-                                    <span class="select"><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></span>
-                                    <span class="select"><select id="equipement_size" name="equipement_size"><option value="" selected></option><option value="small">piccola</option><option value="mid">media</option><option value="big">grande</option><option value="huge">enorme</option></select></span>
+                                    <span class="select"><select id="equipement" name="equipement" required>
+                                            <option value=""></option>
+                                            <option value="car-only">solo macchina</option>
+                                            <option value="tent">tenda</option>
+                                            <option value="roulotte">roulotte</option>
+                                            <option value="camper">camper</option>
+                                            <option value="bicyle">bicicletta</option>
+                                        </select>
+                                    </span>
+                                    <span class="select"><select id="equipement_size" name="equipement_size" required>
+                                            <option value=""></option>
+                                            <option value="small">piccola</option>
+                                            <option value="mid">media</option>
+                                            <option value="big">grande</option>
+                                            <option value="huge">enorme</option>
+                                        </select>
+                                    </span>
                                 </div>
                             </div>
                             <div class="column">
@@ -915,15 +930,20 @@
             </div>
         </section>
 
-        <footer class="footer no-ajax">
+        <footer class="footer no-ajax" id="contatti" data-gaid="contatti">
     <div class="container">
-        <div class="content has-text-centered">
+        <div class="content has-text-centered" itemscope itemtype="http://schema.org/LocalBusiness">
             <p>
-                <strong>Camping Punta Indiani</strong> di <a href="mailto:info@campingpuntaindiani.it">Piffer Renzo e C.</a> - P.IVA 01834810226<br>
-                38057 Valcanover Pergine (TN) ITALY</span><br>
-                <abbr title="Phone">Phone: (0039) 0461 548062</abbr> (summer only)<br>
-                <abbr title="Cell.">Cell.: (0039) 345 0794205</abbr> (winter only)<br>
-                <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
+                <strong itemprop="name">Camping Punta Indiani</strong> di <a href="mailto:info@campingpuntaindiani.it"><span itemprop="founder">Piffer Renzo e C.</span></a> - P.IVA <span itemprop="taxID">01834810226</span><br>
+                <span itemprop="address">Via di Mezzo Lago 2 - 38057 Valcanover Pergine (TN) ITALY</span><br>
+                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                    Latitude: 46&#176;04'53.3467", Longitude: 11&#176;05'21.6791"
+                    <meta itemprop="latitude" content="46.0814852" /> <meta itemprop="longitude" content="11.0893553" />
+                </span><br>
+                <abbr title="Phone">Phone</abbr>: <span itemprop="telephone"><a href="tel:+390461548062">(0039) 0461 548062</a></span> (summer only)<br>
+                <abbr title="Fax number">Fax</abbr>: <span itemprop="faxNumber"><a href="+390461548607">(0039) 0461 548607</a></span> (summer only)<br>
+                <abbr title="Mobile phone">Mobile</abbr>: <span itemprop="telephone"><a href="tel:+393450794205">(0039) 345 0794205</a></span> (winter only)<br>
+                <span itemprop="email"><a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a></span>
             </p>
         </div>
     </div>

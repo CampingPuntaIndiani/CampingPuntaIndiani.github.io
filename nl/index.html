@@ -27,6 +27,8 @@
                 background-size: cover;
             }
 
+            .hero.main-hero .hero-head {background-color: rgba(0,0,0,0.3)}
+
             /* Features broken on phones (on touch)
             TODO: consider detecting via JS instead
              */
@@ -39,7 +41,7 @@
         </style>
     </head>
     <body class="nojs nl">
-        <section class="hero is-info is-fullheight main-hero" id="home">
+        <section class="hero is-info is-fullheight main-hero" id="home" data-gaid="home">
             <div class="hero-head">
                 <header class="nav">
                     <div class="container">
@@ -60,8 +62,7 @@
                             <a href="gallery.html" class="nav-item">gallery</a>
                             <a href="aanbieding.html" class="nav-item">aanbieding</a>
                             <span class="nav-item">
-                                <a href="#reserveren" class="button is-primary is-inverted">
-                                    <span class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                                <a href="#reserveren" class="button is-primary is-upper">
                                     <span>reserveren</span>
                                 </a>
                             </span>
@@ -93,8 +94,7 @@
                 </ul>
                 <ul class="is-center x-menu">
                     <li><a href="https://www.facebook.com/CampingPuntaIndiani/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a></li>
-                    <li><a class="tooltip-bottom" data-tooltip="0461-548062 & 345 0794205"><span class="icon"><i class="fa fa-phone" aria-hidden="true" aria-label="contact via phone" title="">&nbsp;</i></span></a></li>
-                    <li><a><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true" aria-label="contact via mail" title="info@campingpuntaindiani.it">&nbsp;</i></span></a></li>
+                    <li><a href="#contact"><span class="icon" title="contact"><i class="fa fa-address-card-o" aria-hidden="true"></i></span></a></li>
                     <li>
                         <span class="x-matrix">
                             <span class="x-row">
@@ -164,7 +164,7 @@
             </div>
         </nav>
 
-        <section class="section" id="camping">
+        <section class="section" id="camping"  data-gaid="il-campeggio">
             <div class="container">
                 <div class="content is-medium has-text-centered">
                     <h1 class="title is-1 is-upper">kamperen is een passie..</h1>
@@ -234,7 +234,7 @@
 
         <!--            TODO: inserire anche qui versione nera di ADAC ANWB ACSI e? -->
 
-        <section class="section" id="standplaatsen">
+        <section class="section" id="standplaatsen" data-gaid="piazzole">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">onze standplaatsen</h1>
@@ -294,7 +294,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="aqva.html" class="link is-medium is-secondary">Meer informatie over de camping</a>
+                                        <a href="aqva.html" class="link is-medium is-secondary is-upper">Meer informatie over de camping</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=aqva#prenota" class="button is-medium is-primary">reserveren AQVA</a>
@@ -342,7 +342,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="panorama.html" class="link is-medium is-secondary">Meer informatie over de camping</a>
+                                        <a href="panorama.html" class="link is-medium is-secondary is-upper">Meer informatie over de camping</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=panorama#prenota" class="button is-medium is-primary">reserveren PANORAMA</a>
@@ -393,7 +393,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="relax.html" class="link is-medium is-secondary">Meer informatie over de camping</a>
+                                        <a href="relax.html" class="link is-medium is-secondary is-upper">Meer informatie over de camping</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=relax#prenota" class="button is-medium is-primary">reserveren RELAX</a>
@@ -407,11 +407,11 @@
             </div>
         </section>
 
-        <section class="section is-paddingless" id="waar-zijn-wij">
+        <section class="section is-paddingless" id="waar-zijn-wij" data-gaid="dove-siamo">
             <iframe class="gmap" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD4nigm8rShwERBQ80TUTactTvvJQo-SZw&q=Camping+Punta+Indiani,Pergine+Italy" allowfullscreen></iframe>
         </section>
 
-        <section class="section" id="outdoor">
+        <section class="section" id="outdoor" data-gaid="outdoor">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">ontdek een nieuwe wereld</h1>
@@ -516,7 +516,7 @@
             </div>
         </section>
 
-        <section class="section" id="highlights">
+        <section class="section" id="highlights" data-gaid="highlights">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">Camping life</h1>
@@ -587,7 +587,7 @@
         </section>
 
 
-        <section class="section" id="reserveren">
+        <section class="section" id="reserveren" data-gaid="prenota">
             <div class="container content">
                 <div class="heading">
                     <h1 class="title">boek nu uw favoriete plaats</h1>
@@ -622,7 +622,7 @@
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <div class="select"><select id="arrival_month" name="start_month"><option value=""></option><option value="04">Aprile</option><option value="05">Maggio</option><option value="06">Giugno</option><option value="07">Luglio</option><option value="08">Agosto</option><option value="09">Settembre</option></select></div>
+                                    <div class="select"><select id="arrival_month" name="start_month"><option value=""></option><option value="04">April</option><option value="05">Mei</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">Augustus</option><option value="09">September</option></select></div>
                                     <div class="select"><select id="arrival_day"   name="start_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
                                 </span>
 
@@ -633,7 +633,7 @@
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <div class="select"><select id="departure_month" name="end_month"><option value=""></option><option value="04">Aprile</option><option value="05">Maggio</option><option value="06">Giugno</option><option value="07">Luglio</option><option value="08">Agosto</option><option value="09">Settembre</option></select></div>
+                                    <div class="select"><select id="departure_month" name="end_month"><option value=""></option><option value="04">April</option><option value="05">Mei</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">Augustus</option><option value="09">September</option></select></div>
                                     <div class="select"><select id="departure_day"   name="end_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
                                 </span>
                             </div>
@@ -707,7 +707,7 @@
                                     <div class="column">
                                         <label class="label" for="adults">Volwassenen</label>
                                         <div class="control">
-                                            <span class="select"><select type="text" id="adults" name="adults"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
+                                            <span class="select"><select type="text" id="adults" name="adults" required><option></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
                                         </div>
                                         <span class="help">totaal Volwassenen.</span>
                                     </div>
@@ -790,8 +790,23 @@
                                 <legend>equipment</legend>
                                 <div class="control has-addons">
                                     <a class="button"><i class="fa fa-car" aria-hidden="true"></i></a>
-                                    <span class="select"><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></span>
-                                    <span class="select"><select id="equipement_size" name="equipement_size"><option value="" selected></option><option value="small">piccola</option><option value="mid">media</option><option value="big">grande</option><option value="huge">enorme</option></select></span>
+                                    <span class="select"><select id="equipement" name="equipement" required>
+                                            <option value=""></option>
+                                            <option value="car-only">alleen auto</option>
+                                            <option value="tent">tent</option>
+                                            <option value="roulotte">caravan</option>
+                                            <option value="camper">kampeerder</option>
+                                            <option value="bicyle">fiets</option>
+                                        </select>
+                                    </span>
+                                    <span class="select"><select id="equipement_size" name="equipement_size" required>
+                                            <option value=""></option>
+                                            <option value="small">klein</option>
+                                            <option value="mid">middelgroot</option>
+                                            <option value="big">groot</option>
+                                            <option value="huge">zeer groot</option>
+                                        </select>
+                                    </span>
                                 </div>
                             </div>
                             <div class="column">
@@ -855,15 +870,20 @@
             </div>
         </section>
 
-        <footer class="footer no-ajax">
+        <footer class="footer no-ajax" id="contact" data-gaid="contatti">
     <div class="container">
-        <div class="content has-text-centered">
+        <div class="content has-text-centered" itemscope itemtype="http://schema.org/LocalBusiness">
             <p>
-                <strong>Camping Punta Indiani</strong> di <a href="mailto:info@campingpuntaindiani.it">Piffer Renzo e C.</a> - P.IVA 01834810226<br>
-                38057 Valcanover Pergine (TN) ITALY</span><br>
-                <abbr title="Phone">Phone: (0039) 0461 548062</abbr> (summer only)<br>
-                <abbr title="Cell.">Cell.: (0039) 345 0794205</abbr> (winter only)<br>
-                <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
+                <strong itemprop="name">Camping Punta Indiani</strong> di <a href="mailto:info@campingpuntaindiani.it"><span itemprop="founder">Piffer Renzo e C.</span></a> - P.IVA <span itemprop="taxID">01834810226</span><br>
+                <span itemprop="address">Via di Mezzo Lago 2 - 38057 Valcanover Pergine (TN) ITALY</span><br>
+                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                    Latitude: 46&#176;04'53.3467", Longitude: 11&#176;05'21.6791"
+                    <meta itemprop="latitude" content="46.0814852" /> <meta itemprop="longitude" content="11.0893553" />
+                </span><br>
+                <abbr title="Phone">Phone</abbr>: <span itemprop="telephone"><a href="tel:+390461548062">(0039) 0461 548062</a></span> (summer only)<br>
+                <abbr title="Fax number">Fax</abbr>: <span itemprop="faxNumber"><a href="+390461548607">(0039) 0461 548607</a></span> (summer only)<br>
+                <abbr title="Mobile phone">Mobile</abbr>: <span itemprop="telephone"><a href="tel:+393450794205">(0039) 345 0794205</a></span> (winter only)<br>
+                <span itemprop="email"><a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a></span>
             </p>
         </div>
     </div>
