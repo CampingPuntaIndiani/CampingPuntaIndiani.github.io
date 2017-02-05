@@ -197,9 +197,9 @@
 
             <div class="container">
                 <div class="columns">
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_OverTheBridge.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Tent.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Family.jpg"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_OverTheBridge.jpg" alt="&#220;bersicht Stellpl&#228;tze Panorama am Campingplatz Punta Indiani &#8211; Caldonazzosee Trentino"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Tent.jpg" alt="Zelt in  Stellplatz Panorama am Camping Punta Indiani direkt am Caldonazzosee"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Family.jpg" alt="Familienurlaub am See am Camping Punta Indiani - Trentino"></figure>
                 </div>
             </div>
 
@@ -261,6 +261,11 @@ var google_remarketing_only = true;
     ga('create', 'UA-34314298-1', 'auto');
     if (ref) ga('set', 'referrer', ref);
     ga('send', 'pageview');
+
+    // If not on index, consider all page as a section
+    if ("panorama" !== "index")
+        ga('send', 'event', 'section', 'read', 'page-' + "panorama");
+
 </script>
 
     </body>

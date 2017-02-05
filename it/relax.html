@@ -210,9 +210,9 @@
 
             <div class="container">
                 <div class="columns">
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_InTheNature.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_Romantic.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_DogWelcome.jpg"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_InTheNature.jpg" alt="Grande piazzola sull'erba sotto gli alberi nella natura del Camping Punta Indiani"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_Romantic.jpg" alt="Coppia con moto e tenda seduta sotto gli alberi al Campeggio Punta Indiani. Lo spirito originale del campeggio"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_DogWelcome.jpg" alt="Cane pastore del Lagorai sull'erba nell'area Piazzole Relax.Vacanza con il cane Camping Punta Indiani"></figure>
                 </div>
             </div>
 
@@ -274,6 +274,11 @@ var google_remarketing_only = true;
     ga('create', 'UA-34314298-1', 'auto');
     if (ref) ga('set', 'referrer', ref);
     ga('send', 'pageview');
+
+    // If not on index, consider all page as a section
+    if ("relax" !== "index")
+        ga('send', 'event', 'section', 'read', 'page-' + "relax");
+
 </script>
 
     </body>

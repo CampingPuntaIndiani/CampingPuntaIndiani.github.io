@@ -209,9 +209,9 @@
 
             <div class="container">
                 <div class="columns">
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_OverTheBridge.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Tent.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Family.jpg"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_OverTheBridge.jpg" alt="Foto area piazzole Panorama al Campeggio Punta indiani &#8211; Lago di Caldonazzo Trentino"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Tent.jpg" alt="Tenda in piazzola Panorama al Campeggio Punta Indiani, sul Lago di Caldonazzo"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Family.jpg" alt="Vacanze in famiglia al campeggio Punta Indiani &#8211; Trentino"></figure>
                 </div>
             </div>
 
@@ -273,6 +273,11 @@ var google_remarketing_only = true;
     ga('create', 'UA-34314298-1', 'auto');
     if (ref) ga('set', 'referrer', ref);
     ga('send', 'pageview');
+
+    // If not on index, consider all page as a section
+    if ("panorama" !== "index")
+        ga('send', 'event', 'section', 'read', 'page-' + "panorama");
+
 </script>
 
     </body>

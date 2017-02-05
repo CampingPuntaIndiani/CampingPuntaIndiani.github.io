@@ -198,9 +198,9 @@
 
             <div class="container">
                 <div class="columns">
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_InTheNature.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_Romantic.jpg"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_DogWelcome.jpg"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_InTheNature.jpg" alt="Gro&#223;e grassbedeckter und schattige Plaetze  in Natur am Camping Punta Indiani"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_Romantic.jpg" alt="Freunde mit Motorrad und Zelt sitzen unter einem Baum auf Camping Punta indiani-der originaler Geist des Campings"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_DogWelcome.jpg" alt="Sch&#228;ferhund auf dem Rasen. Urlaub mit dem Hund auf dem Campingplatz Punta Indiani"></figure>
                 </div>
             </div>
 
@@ -262,6 +262,11 @@ var google_remarketing_only = true;
     ga('create', 'UA-34314298-1', 'auto');
     if (ref) ga('set', 'referrer', ref);
     ga('send', 'pageview');
+
+    // If not on index, consider all page as a section
+    if ("relax" !== "index")
+        ga('send', 'event', 'section', 'read', 'page-' + "relax");
+
 </script>
 
     </body>
