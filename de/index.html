@@ -197,12 +197,11 @@
         <section class="section" id="campingplatz"  data-gaid="il-campeggio">
             <div class="container">
                 <div class="content is-medium has-text-centered">
-                    <!-- News bar
-                    <div class="notification">
-                    <button class="delete"></button>
-                    New 2017: 6A in all places | mobilehomes | 100Mb/s wifi
+                    <div class="notification is-info is-upper" id="news">
+                        <!-- New 2017: 6A in all places | mobilehomes | 100Mb/s wifi -->
+                        Ge&#246;ffnet bis 3 Oktober
+                        <button class="delete" id="close-news"></button>
                     </div>
-                    -->
                     <h1 class="title is-1 is-upper">camping ist eine leidenschaft.</h1>
                     <p>
                         Beim <strong>Punta Indiani Campingplatz</strong> f&#252;hlen Sie den originalen <strong>Geist</strong> des Campings:<br><strong>vertraulich</strong>, <strong>authentisch</strong>, <strong>essentiell</strong>.<br>Das Gef&#252;hl von einem echten Urlaub f&#252;r alle im Frieden mit der Natur von <strong>Trentino</strong>.
@@ -212,7 +211,7 @@
                         Direkt am <strong>Caldonazzo</strong> Seeufer, im Herz des <strong>Valsugana</strong> Tals.
                     </p>
 
-                    <i>Wir erwarten Sie ab 28 April bis 30 September</i>
+                    <i>Wir erwarten Sie ab 28 April bis 03 Oktober</i>
                 </div>
 
                 <div class="content is-medium has-text-justify is-target" id="mehr-uber-den-campingplatz">
@@ -670,23 +669,23 @@
                             <label class="label">wann</label>
                             <span class="help is-hidden-widescreen">check-in &amp; check-out</span>
                             <div class="control is-centered">
-                                <input type="hidden" id="arrival" data-min="2017-04-26" data-max="2017-09-29">
+                                <input type="hidden" id="arrival" data-min="2017-04-26" data-max="2017-10-02">
                                 <input type="hidden" id="arrival_year" name="start_year" value="2017">
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <span class="select"><select id="arrival_month" name="start_month"><option value="">&nbsp;</option><option value="04">April</option><option value="05">Mai</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">August</option><option value="09">September</option></select></span>
+                                    <span class="select"><select id="arrival_month" name="start_month"><option value="">&nbsp;</option><option value="04">April</option><option value="05">Mai</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">August</option><option value="09">September</option><option value="10">Oktober</option></select></span>
                                     <span class="select"><select id="arrival_day"   name="start_day"><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></span>
                                 </span>
 
                                 <span class="icon is-medium is-hidden-touch is-hidden-desktop-only"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
 
-                                <input type="hidden" id="departure" data-min="2017-04-27" data-max="2017-09-30">
+                                <input type="hidden" id="departure" data-min="2017-04-27" data-max="2017-10-03">
                                 <input type="hidden" id="departure_year" name="end_year" value="2017">
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <span class="select"><select id="departure_month" name="end_month"><option value="">&nbsp;</option><option value="04">April</option><option value="05">Mai</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">August</option><option value="09">September</option></select></span>
+                                    <span class="select"><select id="departure_month" name="end_month"><option value="">&nbsp;</option><option value="04">April</option><option value="05">Mai</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">August</option><option value="09">September</option><option value="10">Oktober</option></select></span>
                                     <span class="select"><select id="departure_day"   name="end_day"><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></span>
                                 </span>
                             </div>
@@ -736,7 +735,7 @@
                                         </optgroup>
                                         <optgroup data-pgroup="promotions" label="Angebote">
                                         
-                                            <option value="o-weekend" data-id="bruckentage">Kurzurlaub im September</option>
+                                            <option value="o-weekend" data-id="bruckentage">week-end di fine estate</option>
                                             <option value="o-bicycle" data-only='bicycle' data-id="rad-und-zelt">Rad und Zelt</option>
                                         </optgroup>
                                         
