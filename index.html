@@ -18,7 +18,7 @@
                     }
                     var lang = lang_map[window.navigator.language];
                     if (lang === undefined) lang='en';
-                    window.location = '//' + lang + '/';
+                    window.location.pathname = lang;
                 };
             //-->
         </script>
